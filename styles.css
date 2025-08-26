@@ -1,0 +1,80 @@
+:root{
+  --logo-section-width: 33%;
+  --form-section-width: 67%;
+}
+
+@font-face {
+  font-family: 'imperial_scriptregular';
+  src: url('assets/fonts/imperialscript-regular-webfont.woff2') format('woff2'),
+    url('assets/fonts/imperialscript-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-section {
+  background-image: url("assets/aaron-burden-TNlHf4m4gpI-unsplash.jpg");
+  background-size: cover;
+  width: var(--logo-section-width);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-section div {
+  background-color: #00000044; /* Partial transparent */
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  width: 100%;
+  height: 120px;
+  padding: 10px 0;
+  margin-top: 200px;
+
+  justify-content: center;
+}
+
+.logo-section div h1 {
+  align-self: center;
+  font-family: 'imperial_scriptregular';
+  font-size: 4rem;
+}
+
+.logo-section p {
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.logo-section p a {
+  color: white;
+}
+
+.logo-section p a:hover {
+  color: gray
+}
+
+.form-section {
+  width: var(--form-section-width);
+}
+
