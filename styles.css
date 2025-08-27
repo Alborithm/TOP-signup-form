@@ -122,7 +122,7 @@ form {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .form-data-inputs div p label {
@@ -132,16 +132,28 @@ form {
 input[type="text"],
 input[type="tel"],
 input[type="password"],
-input[type="email"]
- {
-  border: none;
+input[type="email"] {
+  border: 2px solid gainsboro;
+  border-radius: 5px;
   font-size: 1.5rem;
   padding: .4rem 0 .4rem 1rem;
 }
 
-/* input[type="text"]: {
-  border: 2px solid blue;
+/* input[type="text"]:focus-visible,
+input[type="tel"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="email"]:focus-visible {
+  border: 2px solid rgb(0, 140, 255);
 } */
+
+input:invalid {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+  /* input[type="text"]: {
+    border: 2px solid blue;
+  } */
 
 form button {
   margin-top: 20px;
