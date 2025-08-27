@@ -140,7 +140,7 @@ input[type="text"],
 input[type="tel"],
 input[type="password"],
 input[type="email"] {
-  border: 2px solid gainsboro;
+  border: 2px solid #e4e4e4;
   border-radius: 5px;
   font-size: 1.5rem;
   padding: .4rem 0 .4rem 1rem;
@@ -174,6 +174,7 @@ form button {
 
   border-radius: 10px;
   border: none;
+  box-shadow: 5px 5px 8px gainsboro;
 }
 
 form button:hover {
@@ -184,4 +185,10 @@ form button:hover {
 form button ~ p {
   margin-left: var(--form-maring-left);
   font-size: 1.25rem;
+}
+
+form button ~ p a {
+  color: goldenrod;
+  font-size: inherit;
+  text-decoration: none;
 }
