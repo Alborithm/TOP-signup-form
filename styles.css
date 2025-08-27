@@ -131,7 +131,8 @@ form {
 
 input[type="text"],
 input[type="tel"],
-input[type="password"]
+input[type="password"],
+input[type="email"]
  {
   border: none;
   font-size: 1.5rem;
