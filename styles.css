@@ -97,6 +97,7 @@ main {
 
 form {
   width: 100%;
+  margin-top: 30px;
   /* border: 1px solid red; */
 }
 
@@ -105,6 +106,41 @@ form {
   padding-left: 50px;
   padding-right: 200px;
 }
+
+.form-data-inputs h2 {
+  font-size: 2rem;
+}
+
+.form-data-inputs div {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.form-data-inputs div p {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 250px;
+}
+
+.form-data-inputs div p label {
+  letter-spacing: .2rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"]
+ {
+  border: none;
+  font-size: 1.5rem;
+  padding: .4rem 0 .4rem 1rem;
+}
+
+/* input[type="text"]: {
+  border: 2px solid blue;
+} */
 
 form button {
   margin-top: 20px;
