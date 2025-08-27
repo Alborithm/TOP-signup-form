@@ -30,6 +30,11 @@ main {
   flex-direction: row;
 }
 
+em {
+  font-size: inherit;
+  font-style: italic;
+}
+
 .logo-section {
   background-image: url("assets/aaron-burden-TNlHf4m4gpI-unsplash.jpg");
   background-size: cover;
